@@ -1,0 +1,26 @@
+pipeline {
+   agent any
+   
+  stages {
+     stage('fetching the code') {
+        steps {
+           echo "fetching the code from github"
+             }
+         }
+     stage('build') {
+         steps {
+             echo "this is build phase"
+               } 
+          }
+      stage('test') {
+         steps {
+              echo "this is test phase"
+               } 
+          }
+      stage('deploy') {
+         steps {
+              echo "this is deploy phase"
+               } 
+          }
+   }
+}
