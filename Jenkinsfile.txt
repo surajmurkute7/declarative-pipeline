@@ -9,7 +9,7 @@ pipeline {
          }
      stage('build') {
          steps {
-             build 'maven-job'
+             echo "this is build phase"
                } 
           }
       stage('test') {
